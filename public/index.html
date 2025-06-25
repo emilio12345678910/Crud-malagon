@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALAGON</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="encabezado-sitio">
+            <h1>CRUD-Malagon</h1>
+        </header>
+
+        <main class="seccion-principal">
+            <aside class="barra-lateral">
+                <h2><a href="/obtenerUsuario">Obtener Usuarios</a></h2>
+            </aside>
+
+            <section class="area-contenido-principal">
+                <div class="fila-cajas-productos">
+                    <div class="caja-crud">
+                        
+                        <form action="/agregarUsuario" method="post">
+                            <input type="text" name="nombre" placeholder="Nombre de Usuario">
+                            <br>
+                            <br>
+                            <input type="submit" value="Agregar Usuario">
+                        </form>
+                    </div>
+                    <div class="caja-crud">
+                        <form action="/borrarUsuario" method="post">
+                            <input type="text" name="id" placeholder="Ingresa el id">
+                            <br>
+                            <br>
+                            <input type="submit" value="Borrar Usuario">
+                         </form>
+                    </div>
+                    <div class="caja-crud">
+                        <form action="/actualizarUsuario" method="post">
+                            <input type="text" name="id" placeholder="ID de Usuario">
+                            <br>
+                            <br>
+                            <input type="text" name="nuevoNombre" placeholder="Nuevo Nombre">
+                            <br>
+                            <br>
+                            <input type="submit" value="Actualizar Usuario">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

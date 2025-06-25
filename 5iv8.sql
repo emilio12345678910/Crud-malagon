@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS 5iv8;
+USE 5iv8;
+
+CREATE TABLE usuario (
+  id_usuario INT(10) NOT NULL AUTO_INCREMENT,
+  nombre VARCHAR(60) NOT NULL,
+  PRIMARY KEY (id_usuario),
+  KEY (nombre)
+);
